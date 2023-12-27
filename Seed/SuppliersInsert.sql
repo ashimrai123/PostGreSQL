@@ -1,3 +1,3 @@
 
--- Copy data from CSV file into the Categories table
-COPY "Categories" ("CategoryName", "Description") FROM 'C:\Users\ashim\Desktop\dataAssignment\Categories.csv' WITH DELIMITER ',' CSV HEADER;
+-- Copy data from CSV file into the Suppliers table
+COPY "Suppliers" ("SupplierName", "ContactName","Address","City","PostalCode","Country","Phone") FROM 'C:\Users\ashim\Desktop\dataAssignment\Suppliers.csv' WITH DELIMITER ',' CSV HEADER;
