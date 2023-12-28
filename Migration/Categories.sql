@@ -1,6 +1,6 @@
 -- Table Category
-CREATE TABLE "Categories"(
-    "CategoryID" SERIAL PRIMARY KEY,
-    "CategoryName" VARCHAR,
-    "Description" TEXT
+CREATE TABLE categories (
+    categoryid SERIAL PRIMARY KEY,
+    categoryname VARCHAR(100) NOT NULL,
+    description TEXT NOT NULL
 );

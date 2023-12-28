@@ -1,3 +1,4 @@
-
--- Copy data from CSV file into the Shippers table
-COPY "Shippers" ("ShipperName","Phone") FROM 'C:\Users\ashim\Desktop\dataAssignment\Shippers.csv' WITH DELIMITER ',' CSV HEADER;
+INSERT INTO shippers (shipperid, shippername, phone) VALUES
+	('1', 'Speedy Express', '(503) 555-9831'),
+	('2', 'United Package', '(503) 555-3199'),
+	('3', 'Federal Shipping', '(503) 555-9931');

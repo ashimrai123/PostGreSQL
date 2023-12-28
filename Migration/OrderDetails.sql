@@ -1,7 +1,7 @@
 -- Table OrderDetails
-CREATE TABLE "OrderDetails"(
-    "OrderDetailID" SERIAL PRIMARY KEY,
-    "OrderID" INT,
-	"ProductID" INT,
-	"Quantity" INT
+CREATE TABLE orderdetails (
+    orderdetailid SERIAL PRIMARY KEY,
+    orderid INT REFERENCES orders(orderid),
+    productid INT REFERENCES products(productid),
+    quantity INT NOT NULL CHECK (quantity > 0)
 );
